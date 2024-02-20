@@ -1,6 +1,7 @@
 import styled, { css } from "styled-components";
 
 const Heading = styled.h1.attrs(({ as }) => ({ as: as || "h1" }))`
+  text-align: center;
   ${(props) => {
     switch (props.as) {
       case "h1":

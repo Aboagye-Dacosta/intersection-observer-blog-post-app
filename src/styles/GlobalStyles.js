@@ -48,6 +48,10 @@ button {
   cursor: not-allowed;
 }
 
+.sticky {
+  position:fixed;
+  box-shadow:0 2px 4px rgba(0,0,0,0.04);
+}
 `;
 
 export default GlobalStyles;

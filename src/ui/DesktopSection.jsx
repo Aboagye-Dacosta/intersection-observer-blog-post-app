@@ -5,13 +5,13 @@ import Section from "./Section";
 
 function DesktopSection() {
   return (
-    <Section>
+    <Section as="div" className="deskTop">
       <Grid>
         <Paragraph
           heading="Enjoy on your TV"
           subHeading="Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more."
         />
-        <Image />
+        <Image url="./Kick-3-black.png" />
       </Grid>
     </Section>
   );

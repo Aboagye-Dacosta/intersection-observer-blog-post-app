@@ -3,10 +3,10 @@ import Heading from "./Heading";
 
 function Paragraph({ heading, subHeading }) {
   return (
-    <p>
+    <div>
       <Heading>{heading}</Heading>
       <Heading as="h2">{subHeading}</Heading>
-    </p>
+    </div>
   );
 }
 
