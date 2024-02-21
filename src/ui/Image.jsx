@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
-import { useRef, useState } from "react";
+import { useRef } from "react";
 import styled from "styled-components";
-import { useInterSectionObserver } from "../services/useInterSectionObserver";
+import ObserveImage from "../services/observeImage";
 
 const StyledImage = styled.img`
   width: 100%;
@@ -11,24 +11,13 @@ const StyledImage = styled.img`
 `;
 
 const Image = ({ url }) => {
-  const ref = useRef("image");
-  const [isVisible, setVisible] = useState(false);
-  useInterSectionObserver(
-    ref,
-    {
-      threshold: 0.5,
-    },
-    ([entry]) => {
-      if (entry.isIntersecting) {
-        setVisible(entry.isIntersecting);
-        entry.target.src = entry.target.dataset.src;
-      }
-    }
+  const ref = useRef();
+
+  return (
+    <ObserveImage ref={ref}>
+      <StyledImage ref={ref} data-src={url} />
+    </ObserveImage>
   );
-
-  const active = isVisible ? "active" : "inactive";
-
-  return <StyledImage ref={ref} $active={active} data-src={url} />;
 };
 
 Image.propTypes = {

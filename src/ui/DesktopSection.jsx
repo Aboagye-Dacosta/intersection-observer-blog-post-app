@@ -11,6 +11,7 @@ function DesktopSection() {
           heading="Enjoy on your TV"
           subHeading="Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more."
         />
+
         <Image url="./Kick-3-black.png" />
       </Grid>
     </Section>

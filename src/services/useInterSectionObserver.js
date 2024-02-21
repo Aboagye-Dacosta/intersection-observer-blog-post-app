@@ -8,8 +8,7 @@ export const useInterSectionObserver = (ref, options, callback) => {
 
   useEffect(() => {
     let observer = null;
-    const entity =
-      ref === "header" ? document.querySelector(".header") : ref?.current;
+    const entity = ref?.current;
     if (entity) {
       observer = observerCallback(ref, options, callback);
       observer.observe(entity);

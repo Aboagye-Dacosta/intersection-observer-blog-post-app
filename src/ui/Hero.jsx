@@ -1,6 +1,6 @@
-import { useRef } from "react";
 import styled from "styled-components";
-import { useInterSectionObserver } from "../services/useInterSectionObserver";
+
+import ObserveHero from "../services/observeHero";
 import Button from "./Button";
 import ForwardIcon from "./ForwardIcon";
 import Header from "./Header";
@@ -26,39 +26,21 @@ const StyledRow = styled.div`
   gap: 1rem;
 `;
 
-function Hero() {
-  const ref = useRef();
-
-  useInterSectionObserver(
-    ref,
-    {
-      threshold: 0.5,
-    },
-    ([entry]) => {
-      if (entry.isIntersecting) {
-        const header = document.querySelector(".header");
-        header.classList.remove("sticky");
-        console.log("here");
-      } else {
-        const header = document.querySelector(".header");
-        header.classList.add("sticky");
-        console.log("there");
-      }
-    }
-  );
-
+const Hero = () => {
   return (
-    <StyledHero ref={ref}>
-      <Header />
-      <StyledRow>
-        <Heading>Unlimited movies, TV shows, and more</Heading>
-        <Heading as="h2">Watch anywhere. Cancel anytime.</Heading>
-        <Button>
-          Get Started <ForwardIcon />
-        </Button>
-      </StyledRow>
-    </StyledHero>
+    <ObserveHero>
+      <StyledHero>
+        <Header />
+        <StyledRow>
+          <Heading>Unlimited movies, TV shows, and more</Heading>
+          <Heading as="h2">Watch anywhere. Cancel anytime.</Heading>
+          <Button>
+            Get Started <ForwardIcon />
+          </Button>
+        </StyledRow>
+      </StyledHero>
+    </ObserveHero>
   );
-}
+};
 
 export default Hero;
