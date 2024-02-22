@@ -15,7 +15,7 @@ const Image = ({ url }) => {
 
   return (
     <ObserveImage ref={ref}>
-      <StyledImage ref={ref} data-src={url} />
+      <StyledImage  data-src={url} />
     </ObserveImage>
   );
 };
