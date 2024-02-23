@@ -1,5 +1,6 @@
 import styled from "styled-components";
 
+import { useRef } from "react";
 import ObserveHero from "../services/observeHero";
 import Button from "./Button";
 import ForwardIcon from "./ForwardIcon";
@@ -27,8 +28,9 @@ const StyledRow = styled.div`
 `;
 
 const Hero = () => {
+  const ref = useRef();
   return (
-    <ObserveHero>
+    <ObserveHero ref={ref}>
       <StyledHero>
         <Header />
         <StyledRow>

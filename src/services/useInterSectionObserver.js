@@ -1,7 +1,7 @@
 import { useCallback, useEffect } from "react";
 
 export const useInterSectionObserver = (ref, options, callback) => {
-  const observerCallback = useCallback((ref, options, callback) => {
+  const observerCallback = useCallback((options, callback) => {
     const observer = new IntersectionObserver(callback, options);
     return observer;
   }, []);
@@ -10,7 +10,7 @@ export const useInterSectionObserver = (ref, options, callback) => {
     let observer = null;
     const entity = ref?.current;
     if (entity) {
-      observer = observerCallback(ref, options, callback);
+      observer = observerCallback(options, callback);
       observer.observe(entity);
     }
 

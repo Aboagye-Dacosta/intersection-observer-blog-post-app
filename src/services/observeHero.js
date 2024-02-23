@@ -1,9 +1,9 @@
-import React, { useRef } from "react";
+import { Children, createElement, forwardRef } from "react";
+import PropTypes from "prop-types";
+
 import { useInterSectionObserver } from "./useInterSectionObserver";
 
-const ObserveHero = ({children}) => {
-  const ref = useRef();
-
+const ObserveHero = forwardRef(({ children }, ref) => {
   useInterSectionObserver(
     ref,
     {
@@ -13,16 +13,14 @@ const ObserveHero = ({children}) => {
       const header = document.querySelector(".header");
       if (entry.isIntersecting) {
         header.classList.remove("sticky");
-        console.log("here");
       } else {
         header.classList.add("sticky");
-        console.log("there");
       }
     }
   );
 
-  return React.Children.map(children,(child) => {
-    return React.createElement(child.type, {
+  return Children.map(children, (child) => {
+    return createElement(child.type, {
       ...{
         ...child.props,
         key: "hero",
@@ -30,6 +28,10 @@ const ObserveHero = ({children}) => {
       },
     });
   });
-};
+});
 
+ObserveHero.displayName = "ObserveHero";
+ObserveHero.propTypes = {
+  children: PropTypes.object,
+};
 export default ObserveHero;
