@@ -14,7 +14,7 @@ function KidsSection() {
   return (
     <StyledSection>
       <Grid>
-        <Image url="./Kick-3-gray.png" />
+        <Image url="./kids-main.png" src="kids-sm.jpg" />
         <Paragraph
           heading="Create profiles for kids"
           subHeading="Send kids on adventures with their favorite characters in a space made just for them—free with your membership."

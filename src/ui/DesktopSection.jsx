@@ -12,7 +12,7 @@ function DesktopSection() {
           subHeading="Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more."
         />
 
-        <Image url="./Kick-3-black.png" />
+        <Image url="./desktop-other.jpg" src="desktop-sm.jpg" />
       </Grid>
     </Section>
   );

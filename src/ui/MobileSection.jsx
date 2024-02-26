@@ -13,7 +13,7 @@ function MobileSection() {
   return (
     <StyledSection>
       <Grid>
-        <Image url="./Kick-3-blue.png" />
+        <Image url="./mobile.png" src="mobile.jpg" />
         <Paragraph
           heading="Download your shows to watch offline"
           subHeading="Save your favorites easily and always have something to watch."
