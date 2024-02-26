@@ -6,6 +6,27 @@ const ls = keyframes`
 
 `;
 
+const animateTitle = keyframes`
+  0%{
+   width:10%;
+   left:0;
+   transform:translateX(-50%);
+   opacity: 0;
+
+  }
+  50%{
+    width:10%;
+  }
+  100%{
+    
+    width:50%;
+    left:50%;
+   transform:translateX(-50%);
+   opacity:1;
+   
+  }
+`;
+
 const GlobalStyles = createGlobalStyle`
 :root {
     --color-primary: rgb(254, 27, 27);
@@ -75,10 +96,38 @@ button {
 }
 
 .reloader {
-    position: absolute;
+  position: absolute;
   top:5rem ;
   right: 2rem;
 }
+
+.hide-title {
+  opacity:0;
+  transform: translateY(-100px);
+  transition: opacity 1000ms, transform 3000ms;
+}
+
+.show-title {
+  opacity: 1;
+  transform:translateY(0);
+}
+  
+.title-after::after {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    opacity:1;
+    top: 105%;
+    height: 2px;
+    width: 50%;
+    left:50%;
+   transform:translateX(-50%);
+    background-color: orangered;
+    animation-name: ${animateTitle};
+    animation-direction: normal;
+    animation-iteration-count: initial;
+    animation-duration: 2000ms;
+  }
 `;
 
 export default GlobalStyles;

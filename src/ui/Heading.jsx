@@ -11,7 +11,7 @@ const Heading = styled.h1.attrs(({ as }) => ({ as: as || "h1" }))`
         `;
       case "h2":
         return css`
-          font-size: 3rem;
+          font-size: 2.5rem;
           font-weight: 500;
         `;
       case "h3":

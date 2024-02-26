@@ -1,0 +1,18 @@
+.style {
+    animation-name: nme;
+    animation-direction: normal;
+    animation-iteration-count: initial;
+    animation-delay: 700ms;
+    animation-duration: 500ms;
+
+}
+
+
+@keyframes text {
+    0%{
+        
+    }
+    100%{
+        
+    }
+}

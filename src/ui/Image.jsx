@@ -4,9 +4,9 @@ import styled from "styled-components";
 import ObserveImage from "../services/observeImage";
 
 const StyledImage = styled.img`
-  width: 100%;
-  height: 100%;
-  background-color:inherit;
+  width: 40rem;
+  height: auto;
+  background-color: inherit;
 `;
 
 const Image = ({ url, src }) => {
