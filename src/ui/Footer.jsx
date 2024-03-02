@@ -48,7 +48,7 @@ const Footer = () =>
       <Section>
         <Row direction="vertical">
           <Heading as="h2">By Dacosta Solomon</Heading>
-          <Link href="https://twitter.com/SolomonDacosta">
+          <Link href="https://twitter.com/Code_Costa">
             <FaXTwitter /> <span>Twitter</span>
           </Link>
           <Link href="https://github.ocm/Aboagye-Dacosta">

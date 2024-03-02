@@ -1,8 +1,44 @@
-# React + Vite
+# Hublix Movies Landing page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Table of Contents
 
-Currently, two official plugins are available:
+- Description
+- Technologies Used
+- Installation
+- Usage
+- Contributing
+- License
+- Author
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Description
+
+A simple landing page developed to explain the concepts of the browser IntersectionObserver API in a blog post. The post is available here [here]()
+
+## Technologies Used
+
+- JavaScript
+- React
+- React Icons
+- Styled Components
+
+#### Sample Image
+
+![alt text](public/blog-post-demo-image-small.jpg)
+
+## Author
+
+<div align="center"> Dacosta Aboagye Solomon</div>
+
+<br/>
+
+<div id="badges" align="center">
+  <a href="https://www.linkedin.com/in/solomon-aboagye-011776210/">
+    <img src="https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge"/>
+  </a>
+  <a href="#">
+    <img src="https://img.shields.io/badge/Hashnode-blue?style=for-the-badge&logo=hashnode&logoColor=white" alt="Hashnode Badge"/>
+  </a>
+  <a href="https://twitter.com/CODE_COSTA">
+    <img src="https://img.shields.io/badge/Twitter-blue?style=for-the-badge&logo=twitter&logoColor=white" alt="Twitter Badge"/>
+  </a>
+</div>
