@@ -4,10 +4,6 @@
 
 - Description
 - Technologies Used
-- Installation
-- Usage
-- Contributing
-- License
 - Author
 
 ## Description
