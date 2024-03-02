@@ -15,6 +15,7 @@ const ObserveHero = forwardRef(({ children }, ref) => {
         header.classList.remove("sticky");
       } else {
         header.classList.add("sticky");
+        header.classList.add("shadow");
       }
     }
   );

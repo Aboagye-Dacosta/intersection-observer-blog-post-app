@@ -26,7 +26,7 @@ const DesktopSection = () => {
             </Button>
           </Row>
 
-          <Image url="./desktop-other.jpg" src="desktop-sm.jpg" />
+          <Image url="./main/desktop-main.png" src="./placeholder/desktop-placeholder.png" />
         </Row>
       </Section>
     </ObserveSection>

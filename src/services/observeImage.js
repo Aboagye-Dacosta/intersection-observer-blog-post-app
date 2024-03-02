@@ -1,24 +1,21 @@
 import PropTypes from "prop-types";
-import React, { forwardRef, useState } from "react";
+import React, { forwardRef } from "react";
 
 import { useInterSectionObserver } from "./useInterSectionObserver";
 
 const ObserveImage = forwardRef(({ children }, ref) => {
-  const [isVisible, setVisible] = useState(false);
   useInterSectionObserver(
     ref,
     {
-      threshold: 0.5,
+      threshold: 0.3,
     },
     ([entry]) => {
       if (entry.isIntersecting) {
-        setVisible(entry.isIntersecting);
-        entry.target.src = entry.target.dataset.src;
+        const overlay = entry.target.querySelector(".overlay");
+        overlay.classList.add("remove-blur");
       }
     }
   );
-
-  const active = isVisible ? "active" : "inactive";
 
   return React.Children.map(children, (child, index) => {
     return React.createElement(child.type, {
@@ -26,7 +23,7 @@ const ObserveImage = forwardRef(({ children }, ref) => {
         ...child.props,
         key: `image${index}`,
         ref: ref,
-        $active: active,
+        // $active: active,
       },
     });
   });

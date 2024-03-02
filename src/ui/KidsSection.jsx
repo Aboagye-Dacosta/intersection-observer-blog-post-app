@@ -20,7 +20,10 @@ function KidsSection() {
     <ObserveSection ref={ref}>
       <StyledSection ref={ref}>
         <Row>
-          <Image url="./kids-main.png" src="kids-sm.jpg" />
+          <Image
+            url="./main/kids-main.png"
+            src="./placeholder/kids-placeholder.jpg"
+          />
           <Row direction="vertical">
             <Paragraph
               title="Zone out with kids zone and lets your kids have their adventure"

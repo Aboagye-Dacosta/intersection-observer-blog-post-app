@@ -19,7 +19,7 @@ function MobileSection() {
     <ObserveSection ref={ref}>
       <StyledSection ref={ref}>
         <Row>
-          <Image url="./mobile.png" src="mobile.jpg" />
+          <Image url="./main/mobile-main.png" src="./main/mobile-main.jpg" />
           <Row direction="vertical">
             <Paragraph
               title="Don't worry your pocket is enough."
@@ -27,7 +27,8 @@ function MobileSection() {
               subHeading="Save your favorites easily and always have something to watch."
             />
             <Button>
-              Watch unlimited on your mobile<ForwardIcon />
+              Watch unlimited on your mobile
+              <ForwardIcon />
             </Button>
           </Row>
         </Row>

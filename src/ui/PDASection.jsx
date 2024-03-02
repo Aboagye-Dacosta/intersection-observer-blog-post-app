@@ -21,11 +21,11 @@ function PDASection() {
               subHeading="Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV."
             />
             <Button>
-            What are you waiting for?
+              What are you waiting for?
               <ForwardIcon />
             </Button>
           </Row>
-          <Image url="./pda.png" src="pda.jpg" />
+          <Image url="./main/pda-main.png" src="./main/pda-main.jpg" />
         </Row>
       </Section>
     </ObserveSection>

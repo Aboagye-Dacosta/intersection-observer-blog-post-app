@@ -12,9 +12,17 @@ const StyledHeader = styled.nav`
   padding: 1rem 4rem;
   background-color: #fff;
   width: 100%;
-  z-index:1000;
+  z-index: 1000;
   /* margin: 0 2rem; */
 
+  &.shadow {
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+  }
+
+  &.sticky {
+    position: fixed;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+  }
 `;
 
 const StyledHeading = styled(Heading)`
