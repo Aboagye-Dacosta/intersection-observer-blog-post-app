@@ -35,7 +35,7 @@ A simple landing page developed to explain the concepts of the browser Intersect
   <a href="https://www.linkedin.com/in/solomon-aboagye-011776210/">
     <img src="https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge"/>
   </a>
-  <a href="#">
+  <a href="https://dacostasolomon-codeman.hashnode.dev">
     <img src="https://img.shields.io/badge/Hashnode-blue?style=for-the-badge&logo=hashnode&logoColor=white" alt="Hashnode Badge"/>
   </a>
   <a href="https://twitter.com/CODE_COSTA">
